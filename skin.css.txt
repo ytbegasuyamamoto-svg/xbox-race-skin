@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  background: transparent;
+}
+
+.controller {
+  position: relative;
+  width: 360px;
+  height: 220px;
+  font-family: Arial, sans-serif;
+}
+
+/* トリガー */
+.trigger {
+  position: absolute;
+  width: 50px;
+  height: 160px;
+  border: 2px solid #00ffe1;
+  box-shadow: 0 0 15px #00ffe1;
+  text-align: center;
+  color: #00ffe1;
+  font-size: 11px;
+}
+
+.trigger .fill {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  background: linear-gradient(#00ffe1, #007a70);
+  transition: height 0.05s;
+}
+
+/* 押し込み量（GamePad Viewerが自動制御） */
+.trigger.pressed .fill {
+  height: 100%;
+}
+
+.lt { left: 20px; }
+.rt { right: 20px; }
+
+/* ハンドル */
+.wheel {
+  position: absolute;
+  left: 110px;
+  bottom: 20px;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 3px solid #ffcc00;
+  box-shadow: 0 0 25px #ffcc00;
+  text-align: center;
+  color: #ffcc00;
+}
+
+.wheel .stick {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #111;
+  margin: 50px auto 0;
+}
+
+.wheel span {
+  position: absolute;
+  bottom: -18px;
+  width: 100%;
+  font-size: 12px;
+}
+
+/* A B ボタン */
+.button {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #ff00ff;
+  box-shadow: 0 0 15px #ff00ff;
+  color: #ff00ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.button.pressed {
+  background: #ff00ff;
+  color: #000;
+  transform: scale(1.2);
+}
+
+.a { right: 90px; bottom: 40px; }
+.b { right: 50px; bottom: 80px; }

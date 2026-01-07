@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>Xbox Race Skin</title>
+  <link rel="stylesheet" href="skin.css">
+</head>
+<body>
+  <div class="controller">
+
+    <div class="trigger lt">
+      <div class="fill"></div>
+      <span>LT<br>BRAKE</span>
+    </div>
+
+    <div class="trigger rt">
+      <div class="fill"></div>
+      <span>RT<br>ACCEL</span>
+    </div>
+
+    <div class="wheel">
+      <div class="stick"></div>
+      <span>STEER</span>
+    </div>
+
+    <div class="button a">A</div>
+    <div class="button b">B</div>
+
+  </div>
+</body>
+</html>
